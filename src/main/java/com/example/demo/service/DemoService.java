@@ -39,7 +39,7 @@ public class DemoService {
     @Recover
     public Set<String> remoteCallRecovery(RuntimeException e) {
         logger.error("remoteCall :: recovering");
-        return Set.of("Failure");
+        return Set.of("Failure, returning default message.");
     }
 
 }

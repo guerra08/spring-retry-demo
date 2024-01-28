@@ -32,7 +32,7 @@ public class DemoTemplateService {
             var random = new Random();
             var chance = random.nextInt(10);
             if (chance < 8) {
-                logger.error( "callRemote :: Remote call failed to {}", appConfig.externalServiceName());
+                logger.error("callRemote :: Remote call failed to {}", appConfig.externalServiceName());
                 throw new RuntimeException("Remote call failed");
             }
             return chance;
